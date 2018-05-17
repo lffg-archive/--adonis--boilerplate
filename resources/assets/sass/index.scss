@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1rem;
+  color: #27282b;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.has-styles {
+  display: block !important;
+}
+
+.no-styles {
+  display: none !important;
+}
