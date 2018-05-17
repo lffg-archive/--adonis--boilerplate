@@ -6,10 +6,10 @@ My personal boilerplate for AdonisJs.
 
 ```shell
 # Yarn (default for this boilerplate):
-adonis new <name> --boilerplate lffg/adonis-start --yarn
+adonis new <name> --blueprint lffg/adonis-start --yarn
 
 # Npm:
-adonis new <name> --boilerplate lffg/adonis-start
+adonis new <name> --blueprint lffg/adonis-start
 ```
 
 ### What is in the box?
