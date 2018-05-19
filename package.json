@@ -1,23 +1,26 @@
 {
-  "name": "adonis-fullstack-app",
-  "version": "4.1.0",
+  "name": "adonis-start",
+  "version": "2.0.0",
   "adonis-version": "4.1.0",
-  "description": "The fullstack application boilerplate for Adonisjs",
+  "description": "lffg's boilerplate for AdonisJs.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "test": "node ace test",
-    "dev": "concurrently --kill-others -p \"[{name}]\" -n \"SERVER,ASSETS\" -c \"bgGreen.bold,bgMagenta.bold\" \"npm run server:dev\" \"npm run bundle:dev\"",
-    "server": "adonis serve",
-    "server:dev": "npm run server -- --dev",
-    "bundle": "adonis bundle",
-    "bundle:dev": "npm run bundle -- --watch"
+    "dev": "concurrently --kill-others -p \"[{name}]\" -n \"SERVER,ASSETS\" -c \"bgGreen.bold,bgMagenta.bold\" \"npm run serve:dev\" \"npm run build:dev\"",
+    "serve": "adonis serve",
+    "serve:dev": "npm run serve -- --dev",
+    "build": "gulp build",
+    "build:dev": "gulp dev"
   },
   "keywords": [
     "adonisjs",
-    "adonis-app"
+    "adonis-app",
+    "adonis start",
+    "gulp",
+    "boilerplate"
   ],
-  "author": "",
+  "author": "lffg",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -32,13 +35,17 @@
     "@adonisjs/session": "^1.0.23",
     "@adonisjs/shield": "^1.0.6",
     "@adonisjs/validator": "^5.0.3",
-    "adonis-bundler": "^1.0.0",
     "moment": "^2.22.1",
     "mysql": "^2.15.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
-    "node-sass": "^4.9.0"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
   },
   "autoload": {
     "App": "./app"

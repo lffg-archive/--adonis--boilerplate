@@ -1,21 +1,9 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import "./vendor/bootstrap/bootstrap.scss";
 
-body {
-  font-size: 18px;
-  line-height: 1rem;
-  color: #27282b;
-  font-family: sans-serif;
-  background-color: #fff;
+.no-styles {
+  display: none;
 }
 
 .has-styles {
   display: block !important;
-}
-
-.no-styles {
-  display: none !important;
 }
