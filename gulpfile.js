@@ -53,7 +53,7 @@ gulp.task('sass', () => {
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(prefixer({
-      browsers: ['last 2 versions'],
+      browsers: ['last 2 versions']
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(DEST_PATHS.sass))
